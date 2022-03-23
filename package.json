@@ -1,0 +1,23 @@
+{
+  "name": "suite-landing-page",
+  "version": "1.0.0",
+  "description": "frontendmentor.io junior level challenge. HTML CSS SassyCSS",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map src/main.scss src/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richieAiello/suite-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richieAiello/suite-landing-page/issues"
+  },
+  "homepage": "https://github.com/richieAiello/suite-landing-page#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}

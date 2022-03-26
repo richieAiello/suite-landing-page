@@ -4,20 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   
     <title>Frontend Mentor | Suite landing page</title>
 </head>
 
 <body class="body">
-    <nav class="nav flex flex--nav">
+    <nav class="nav flex flex--nav container--nav">
+
         <img src="../assets/logo.svg" alt="suite logo" class="logo">
+
         <a href="#" class="btn btn--nav">Request Beta Access</a>
     </nav>
 
-    <header class="hero">
+    <header class="hero flex flex--hero container--hero">
 
+        <div class="hero__wrapper flex flex--wrapper">
+
+            <section class="hero__main">
+
+                <h1 class="hero__heading">A super solution for your business.</h1>
+
+                <p class="hero__text">
+                    Our marketing and sales automations help you scale your outreach to 
+                    get more leads for your company.
+                </p>
+
+                <a href="#" class="btn btn--hero">Request Beta Access</a>
+            </section>
+
+            <img src="../assets/image-hero-landscape.png" alt="smartphone with a gradient background" class="image image--hero">
+        </div>
+
+        <!-- Grid for perfect centering -->
+        <section class="stats">
+
+            <div class="stats__companies">
+                <h2 class="stats__heading">2K+</h2>
+                <p class="stats__text">Companies</p>
+            </div>
+            
+            <div class="stats__languages">
+                <h2 class="stats__heading">8</h2>
+                <p class="stats__text">Languages</p>
+            </div>
+
+            <div class="stats__leads">
+                <h2 class="stats__heading">1.2M</h2>
+                <p class="stats__text">Leads</p> 
+            </div>
+        </section>
     </header>
 
     <main class="main">

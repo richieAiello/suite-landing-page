@@ -16,6 +16,9 @@
   margin-inline: auto;
   width: 95%;
 }
+.container--main {
+  width: 100%;
+}
 
 .flex {
   display: flex;
@@ -32,6 +35,7 @@
 }
 .flex--main {
   flex-direction: column;
+  align-items: center;
 }
 .flex--footer {
   flex-direction: column;
@@ -41,10 +45,37 @@
   justify-content: center;
 }
 
+.bold-text {
+  font-weight: 700;
+}
+
+.nav {
+  padding: 1em 0;
+}
+
+.hero__heading {
+  font-weight: 400;
+  font-size: 2.375rem;
+  line-height: 2.75rem;
+  color: #172339;
+}
+
 .btn {
   text-decoration: none;
   display: inline-block;
   font-weight: 700;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  transition: all 250ms;
+}
+.btn--nav {
+  font-size: 0.875rem;
+  color: #172339;
+  border: 1px solid #172339;
+}
+.btn--nav:hover, .btn--nav:focus {
+  background-color: #172339;
+  color: #FAF8F6;
 }
 
 .image {

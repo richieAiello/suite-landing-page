@@ -4,12 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   
     <title>Frontend Mentor | Suite landing page</title>
 </head>
-<body>
-    
+
+<body class="body">
+    <nav class="nav flex flex--nav container--nav">
+
+        <img src="../assets/logo.svg" alt="suite logo" class="logo">
+
+        <a href="#" class="btn btn--nav">Request Beta Access</a>
+    </nav>
+
+    <header class="hero flex flex--hero container--hero">
+
+        <div class="hero__wrapper flex flex--wrapper">
+
+            <section class="hero__main">
+
+                <h1 class="hero__heading">A super solution for your business.</h1>
+
+                <p class="hero__text">
+                    Our marketing and sales automations help you scale your outreach to 
+                    get more leads for your company.
+                </p>
+
+                <a href="#" class="btn btn--hero">Request Beta Access</a>
+            </section>
+
+            <img src="../assets/image-hero-landscape.png" alt="smartphone with a gradient background" class="image image--hero">
+        </div>
+
+        <!-- Grid for perfect centering -->
+        <section class="stats">
+
+            <div class="stats__companies">
+                <h2 class="stats__heading">2K+</h2>
+                <p class="stats__text">Companies</p>
+            </div>
+            
+            <div class="stats__languages">
+                <h2 class="stats__heading">8</h2>
+                <p class="stats__text">Languages</p>
+            </div>
+
+            <div class="stats__leads">
+                <h2 class="stats__heading">1.2M</h2>
+                <p class="stats__text">Leads</p> 
+            </div>
+        </section>
+    </header>
+
+    <!-- Position absolute with z-index to overlap footer -->
+    <main class="main flex flex--main">
+
+        <div class="main__image-wrapper">
+            <img src="../assets/image-jeremy-small.png" alt="Jeremy using a tablet!" class="image image--jeremy">
+            <img src="../assets/pattern-blur.svg" class="image image--blur">
+        </div>
+
+        <img src="../assets/pattern-curved-line-2.svg" alt="small curved line" class="main__accent">
+
+        <section class="main__content">
+
+            <h3 class="main__heading">It just works.</h3>
+            <p class="main__quote">
+                “I really like how it is an all-in-one solution that handle many of 
+                the tasks that you would normally need separate tools to do the same 
+                job. This thing is a miracle worker.”
+            </p>
+
+            <h4 class="main__sub-heading">Jeremy Robinson</h4>
+            <p class="main__sub-text">CMO, Fylo</p>
+        </section>
+    </main>
+
+    <footer class="footer flex flex--footer">
+
+        <img src="../assets/logo.svg" alt="suite logo" class="logo">
+
+        <p class="copyright">Copyright - Suite</p>
+
+        <ul class="footer__list  flex flex--list">
+
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                    <img src="../assets/icon-facebook.svg" alt="facebook" class="image image--icon">
+                </a>
+            </li>
+
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                    <img src="../assets/icon-twitter.svg" alt="twitter" class="image image--icon">
+                </a>
+            </li>
+
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                    <img src="../assets/icon-instagram.svg" alt="instagram" class="image image--icon">
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>

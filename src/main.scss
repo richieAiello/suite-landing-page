@@ -1,0 +1,72 @@
+// colors
+$dark-blue: #172339;
+$dark-grey: #49566D;
+$light-grey: #F3EDE7;
+$off-white: #FAF8F6;
+$light-purple: #A060FF;
+$pink: #CB30E3;
+$orange: #FFA84E;
+
+// reset
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// base styles
+.body {
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+.container {
+    margin-inline: auto;
+    width: 95%;
+}
+
+.flex {
+    display: flex;
+
+    &--nav {
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &--hero {
+        flex-direction: column;
+    }
+
+    &--wrapper {
+        flex-direction: column;
+    }
+
+    &--main {
+        flex-direction: column;
+    }
+
+    &--footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &--list {
+        justify-content: center;
+    }
+}
+
+// buttons and links
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+}
+
+// images
+.image {
+    max-width: 100%;
+}

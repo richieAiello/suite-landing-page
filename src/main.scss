@@ -1,0 +1,136 @@
+// colors
+$dark-blue: #172339;
+$dark-grey: #49566D;
+$light-grey: #F3EDE7;
+$off-white: #FAF8F6;
+$light-purple: #A060FF;
+$pink: #CB30E3;
+$orange: #FFA84E;
+
+// reset
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// base styles
+.body {
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+.container {
+    margin-inline: auto;
+    width: 95%;
+
+    &--main {
+        width: 100%;
+    }
+}
+
+.flex {
+    display: flex;
+
+    &--nav {
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &--hero {
+        flex-direction: column;
+    }
+
+    &--wrapper {
+        flex-direction: column;
+    }
+
+    &--main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &--footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &--list {
+        justify-content: center;
+    }
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+// nav
+.nav {
+    padding: 1em 0;
+}
+
+// hero
+.hero {
+
+    &__heading {
+        font-weight: 400;
+        font-size: 2.375rem;
+        line-height: 2.75rem;  
+        color: $dark-blue;
+    }
+
+    &__text {
+        color: $dark-grey;
+    }
+}
+
+// stats
+
+
+
+// main
+
+// footer
+
+// buttons and links
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0.8em 1.5em;
+    transition: all 250ms ease-in-out;
+
+    &--nav {
+        font-size: 0.875rem;
+        color: $dark-blue;
+        border: 1px solid $dark-blue;
+
+        &:hover,
+        &:focus  {
+            background-color: $dark-blue;
+            color: $off-white;
+        }
+    }
+
+    &--hero {
+        color: $off-white;
+        background-color: $dark-blue;
+        margin-top: 1em;
+        margin-bottom: 3em;
+
+        &:hover,
+        &:focus  {
+            background-image: linear-gradient(to bottom right, $light-purple, $pink, $orange);
+        }
+    }
+}
+
+// images
+.image {
+    max-width: 100%;
+}

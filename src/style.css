@@ -63,6 +63,28 @@
   color: #49566D;
 }
 
+.stats {
+  padding: 5em 0;
+  text-align: center;
+}
+.stats__companies .stats__heading {
+  margin-top: 0;
+}
+.stats__heading {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #172339;
+  line-height: 3.5rem;
+  margin-bottom: 0;
+}
+.stats__text {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #49566D;
+  letter-spacing: 2.5px;
+  margin-bottom: 0;
+}
+
 .btn {
   text-decoration: none;
   display: inline-block;

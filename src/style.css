@@ -35,6 +35,9 @@
 }
 .flex--main {
   flex-direction: column;
+}
+.flex--main-wrapper {
+  flex-direction: column;
   align-items: center;
 }
 .flex--footer {
@@ -64,8 +67,11 @@
 }
 
 .stats {
-  padding: 5em 0;
+  position: relative;
+  padding-top: 5em;
+  padding-bottom: 15em;
   text-align: center;
+  z-index: 1;
 }
 .stats__companies .stats__heading {
   margin-top: 0;
@@ -83,6 +89,44 @@
   color: #49566D;
   letter-spacing: 2.5px;
   margin-bottom: 0;
+}
+
+.main {
+  background-color: #172339;
+  border-radius: 10px;
+  padding: 0 1.5em 2em 1.5em;
+}
+.main__image-wrapper {
+  position: relative;
+  min-height: 12em;
+}
+.main__accent {
+  align-self: center;
+  padding: 2em 0;
+}
+.main__content {
+  text-align: center;
+}
+.main__heading {
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #FAF8F6;
+}
+.main__quote {
+  color: #F3EDE7;
+}
+.main__sub-heading {
+  text-transform: uppercase;
+  color: #FAF8F6;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+.main__sub-text {
+  text-transform: uppercase;
+  color: #F3EDE7;
+  font-size: 1rem;
+  letter-spacing: 2.5px;
+  margin-top: 0;
 }
 
 .btn {
@@ -114,4 +158,15 @@
 
 .image {
   max-width: 100%;
+}
+.image--jeremy {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+}
+.image--blur {
+  opacity: 0.5;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
 }

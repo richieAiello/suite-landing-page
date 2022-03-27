@@ -49,12 +49,14 @@ $orange: #FFA84E;
         flex-direction: column;
     }
 
+    &--main {
+        flex-direction: column;
+    }
+    
     &--main-wrapper {
         flex-direction: column;
         align-items: center;
     }
-
-
 
     &--footer {
         flex-direction: column;
@@ -124,11 +126,16 @@ $orange: #FFA84E;
     background-color: $dark-blue;
     border-radius: 10px;
     color: $off-white;
-    padding: 2em 1em;
+    padding: 0 1em 2em 1em;
 
     &__image-wrapper {
         position: relative;
+        min-height: 12em;
+    }
 
+    &__accent {
+        align-self: center;
+        padding: 2em 0;
     }
 
     &__content {
@@ -178,14 +185,14 @@ $orange: #FFA84E;
 
     &--jeremy {
         position: absolute;
-        bottom: 9em;
         z-index: 2;
+        bottom: 0;
     }
 
     &--blur  {
-        opacity: 0.4;
-        z-index: 0;
-        position: relative;
-        bottom: 7em;
+        opacity: 0.5;
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
     }
 }

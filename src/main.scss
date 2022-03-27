@@ -79,12 +79,18 @@ $orange: #FFA84E;
     &__heading {
         font-weight: 400;
         font-size: 2.375rem;
-        line-height: 2.75rem;
+        line-height: 2.75rem;  
         color: $dark-blue;
+    }
+
+    &__text {
+        color: $dark-grey;
     }
 }
 
 // stats
+
+
 
 // main
 

@@ -74,18 +74,24 @@ $orange: #FFA84E;
 
 // nav
 .nav {
-    padding: 1em 0;
+    padding: 1em 0 3em 0;
 }
 
 // hero
 .hero {
     padding-bottom: 25em;
 
+    &__accent {
+        width: 16ch;
+        margin-left: 15ch;
+    }
+
     &__heading {
         font-weight: 400;
         font-size: 2.375rem;
         line-height: 2.75rem;  
         color: $dark-blue;
+        margin-top: 0;
     }
 
     &__text {

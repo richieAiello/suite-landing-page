@@ -66,6 +66,13 @@ $orange: #FFA84E;
     &--list {
         justify-content: flex-start;
     }
+
+    @media(min-width: 800px) {
+        
+        &--wrapper {
+            flex-direction: row;
+        }
+    }
 }
 
 .bold-text {
@@ -80,7 +87,6 @@ $orange: #FFA84E;
 // hero
 .hero {
     padding-bottom: 25em;
-    
 
     &__accent {
         width: 16ch;
@@ -120,15 +126,9 @@ $orange: #FFA84E;
 
 // stats
 .stats {
-    position: relative;
     padding-top: 5em;
     padding-bottom: 15em;
     text-align: center;
-    z-index: 1;
-
-    &__companies &__heading {
-        margin-top: 0;
-    }
 
     &__heading {
         font-weight: 700;
@@ -144,6 +144,36 @@ $orange: #FFA84E;
         color: $dark-grey;
         letter-spacing: 2.5px;
         margin-bottom: 0;
+    }
+
+    &__companies &__heading {
+        margin-top: 0;
+    }
+
+    @media(min-width: 800px) {
+        & {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "a b c";
+            padding-top: 7em;
+        }
+
+        &__companies {
+            grid-area: a;
+        }
+
+        &__languages {
+            grid-area: b;
+        }
+
+        &__leads {
+            grid-area: c;
+        }
+
+        &__languages &__heading,
+        &__leads &__heading {
+            margin-top: 0;
+        }
     }
 }
 
@@ -269,6 +299,10 @@ $orange: #FFA84E;
 // images
 .image {
     max-width: 100%;
+
+    &--hero-portrait {
+        display: none;
+    }
 
     &--jeremy {
         position: absolute;

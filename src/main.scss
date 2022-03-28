@@ -41,6 +41,13 @@ $orange: #FFA84E;
         &--main {
             width: min(95%, 1110px);
         }
+
+        &--footer {
+            width: min(95%, 1110px);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+        }
     }
 }
 
@@ -166,20 +173,7 @@ $orange: #FFA84E;
         & {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas: "a b c";
             padding-top: 7em;
-        }
-
-        &__companies {
-            grid-area: a;
-        }
-
-        &__languages {
-            grid-area: b;
-        }
-
-        &__leads {
-            grid-area: c;
         }
 
         &__languages &__heading,
@@ -254,6 +248,7 @@ $orange: #FFA84E;
         list-style: none;
         padding: 0;
         margin-top: 0;
+        justify-self: end;
     }
 
     // &__item {
@@ -268,6 +263,7 @@ $orange: #FFA84E;
     font-size: 0.9375rem;
     color: $dark-grey;
     margin: 2em 0;
+    justify-self: center;
 }
 
 // buttons and links

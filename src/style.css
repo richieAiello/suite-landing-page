@@ -27,6 +27,12 @@
   .container--main {
     width: min(95%, 1110px);
   }
+  .container--footer {
+    width: min(95%, 1110px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
 }
 
 .flex {
@@ -128,17 +134,7 @@
   .stats {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "a b c";
     padding-top: 7em;
-  }
-  .stats__companies {
-    grid-area: a;
-  }
-  .stats__languages {
-    grid-area: b;
-  }
-  .stats__leads {
-    grid-area: c;
   }
   .stats__languages .stats__heading, .stats__leads .stats__heading {
     margin-top: 0;
@@ -200,12 +196,14 @@
   list-style: none;
   padding: 0;
   margin-top: 0;
+  justify-self: end;
 }
 
 .copyright {
   font-size: 0.9375rem;
   color: #49566D;
   margin: 2em 0;
+  justify-self: center;
 }
 
 .btn {

@@ -62,6 +62,7 @@
 .hero__accent {
   width: 16ch;
   margin-left: 15ch;
+  transition: all 250ms;
 }
 .hero__heading {
   font-weight: 400;
@@ -69,10 +70,22 @@
   line-height: 2.75rem;
   color: #172339;
   margin-top: 0;
+  transition: all 250ms;
 }
 .hero__text {
   color: #49566D;
   letter-spacing: 0.09px;
+}
+@media (min-width: 600px) {
+  .hero__accent {
+    width: 20ch;
+    margin-left: 23ch;
+  }
+  .hero__heading {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: -0.78px;
+  }
 }
 
 .stats {
@@ -175,6 +188,11 @@
 .btn--nav:hover, .btn--nav:focus {
   background-color: #172339;
   color: #FAF8F6;
+}
+@media (min-width: 600px) {
+  .btn--nav {
+    font-size: 1rem;
+  }
 }
 .btn--hero {
   color: #FAF8F6;

@@ -74,7 +74,8 @@
 }
 
 .hero {
-  padding-bottom: 25em;
+  padding-bottom: 28ch;
+  transition: all 250ms;
 }
 .hero__wrapper {
   position: relative;
@@ -105,6 +106,16 @@
     font-size: 3.5rem;
     line-height: 4rem;
     letter-spacing: -0.78px;
+  }
+}
+@media (min-width: 720px) {
+  .hero {
+    padding-bottom: 25ch;
+  }
+}
+@media (min-width: 861px) {
+  .hero {
+    padding-bottom: 22ch;
   }
 }
 
@@ -143,7 +154,7 @@
 
 .main {
   position: absolute;
-  bottom: 16em;
+  bottom: 30ch;
   left: 0;
   right: 0;
   margin-inline: auto;
@@ -183,11 +194,17 @@
   letter-spacing: 2.5px;
   margin-top: 0;
 }
+@media (min-width: 600px) {
+  .main {
+    bottom: 20ch;
+  }
+}
 
 .footer {
   background-color: #F3EDE7;
-  padding-top: 20em;
+  padding-top: 50ch;
   padding-bottom: 3em;
+  transition: all 250ms;
 }
 .footer__logo {
   margin-bottom: 0;

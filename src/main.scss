@@ -21,6 +21,7 @@ $orange: #FFA84E;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 2rem;
+    position: relative;
 }
 
 .container {
@@ -78,6 +79,7 @@ $orange: #FFA84E;
 
 // hero
 .hero {
+    padding-bottom: 25em;
 
     &__heading {
         font-weight: 400;
@@ -122,6 +124,8 @@ $orange: #FFA84E;
 
 // main
 .main {
+    position: absolute;
+    bottom: 16em;
     background-color: $dark-blue;
     border-radius: 10px;
     padding: 0 1.5em 2em 1.5em;
@@ -169,6 +173,7 @@ $orange: #FFA84E;
 // footer
 .footer {
     background-color: $light-grey;
+    padding-top: 20em;
     padding-bottom: 3em;
 
     &__logo {

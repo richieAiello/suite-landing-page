@@ -35,6 +35,13 @@ $orange: #FFA84E;
     &--footer {
         width: max-content;
     }
+    
+    @media(min-width: 600px) {
+
+        &--main {
+            width: min(95%, 1110px);
+        }
+    }
 }
 
 .flex {
@@ -155,7 +162,7 @@ $orange: #FFA84E;
         margin-top: 0;
     }
 
-    @media(min-width: 800px) {
+    @media(min-width: 720px) {
         & {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -186,6 +193,9 @@ $orange: #FFA84E;
 .main {
     position: absolute;
     bottom: 16em;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
     background-color: $dark-blue;
     border-radius: 10px;
     padding: 0 1.5em 2em 1.5em;
@@ -246,12 +256,12 @@ $orange: #FFA84E;
         margin-top: 0;
     }
 
-    &__item {
-    }
+    // &__item {
+    // }
 
-    &__link {
+    // &__link {
 
-    }
+    // }
 }
 
 .copyright {
@@ -335,7 +345,7 @@ $orange: #FFA84E;
         }
     }
 
-    @media(min-width: 800px) {
+    @media(min-width: 720px) {
 
         &--hero-landscape {
             display: none;

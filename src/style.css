@@ -23,6 +23,11 @@
 .container--footer {
   width: max-content;
 }
+@media (min-width: 600px) {
+  .container--main {
+    width: min(95%, 1110px);
+  }
+}
 
 .flex {
   display: flex;
@@ -119,7 +124,7 @@
 .stats__companies .stats__heading {
   margin-top: 0;
 }
-@media (min-width: 800px) {
+@media (min-width: 720px) {
   .stats {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -143,6 +148,9 @@
 .main {
   position: absolute;
   bottom: 16em;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
   background-color: #172339;
   border-radius: 10px;
   padding: 0 1.5em 2em 1.5em;
@@ -193,6 +201,7 @@
   padding: 0;
   margin-top: 0;
 }
+
 .copyright {
   font-size: 0.9375rem;
   color: #49566D;
@@ -255,7 +264,7 @@
 .image--icon:hover, .image--icon:focus {
   opacity: 0.5;
 }
-@media (min-width: 800px) {
+@media (min-width: 720px) {
   .image--hero-landscape {
     display: none;
   }

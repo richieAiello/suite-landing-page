@@ -26,7 +26,7 @@ $orange: #FFA84E;
 
 .container {
     margin-inline: auto;
-    width: 95%;
+    width: min(95%, 1110px);
 
     &--main {
         width: 100%;
@@ -71,6 +71,7 @@ $orange: #FFA84E;
         
         &--wrapper {
             flex-direction: row;
+            align-items: center;
         }
     }
 }
@@ -88,6 +89,10 @@ $orange: #FFA84E;
 .hero {
     padding-bottom: 25em;
 
+    &__wrapper {
+        position: relative;
+    }
+    
     &__accent {
         width: 16ch;
         margin-left: 15ch;
@@ -327,6 +332,21 @@ $orange: #FFA84E;
         &:hover,                    
         &:focus {
             opacity: 0.5;
+        }
+    }
+
+    @media(min-width: 800px) {
+
+        &--hero-landscape {
+            display: none;
+        }
+
+        &--hero-portrait {
+            display: block;
+            height: 482px;
+            position: absolute;
+            z-index: -1;
+            left: 39ch;
         }
     }
 }

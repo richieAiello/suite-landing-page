@@ -15,7 +15,7 @@
 
 .container {
   margin-inline: auto;
-  width: 95%;
+  width: min(95%, 1110px);
 }
 .container--main {
   width: 100%;
@@ -50,6 +50,7 @@
 @media (min-width: 800px) {
   .flex--wrapper {
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -63,6 +64,9 @@
 
 .hero {
   padding-bottom: 25em;
+}
+.hero__wrapper {
+  position: relative;
 }
 .hero__accent {
   width: 16ch;
@@ -250,4 +254,16 @@
 }
 .image--icon:hover, .image--icon:focus {
   opacity: 0.5;
+}
+@media (min-width: 800px) {
+  .image--hero-landscape {
+    display: none;
+  }
+  .image--hero-portrait {
+    display: block;
+    height: 482px;
+    position: absolute;
+    z-index: -1;
+    left: 39ch;
+  }
 }

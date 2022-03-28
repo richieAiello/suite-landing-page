@@ -10,6 +10,7 @@
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 2rem;
+  position: relative;
 }
 
 .container {
@@ -18,6 +19,9 @@
 }
 .container--main {
   width: 100%;
+}
+.container--footer {
+  width: max-content;
 }
 
 .flex {
@@ -40,12 +44,8 @@
   flex-direction: column;
   align-items: center;
 }
-.flex--footer {
-  flex-direction: column;
-  align-items: center;
-}
 .flex--list {
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .bold-text {
@@ -56,6 +56,9 @@
   padding: 1em 0;
 }
 
+.hero {
+  padding-bottom: 25em;
+}
 .hero__heading {
   font-weight: 400;
   font-size: 2.375rem;
@@ -92,6 +95,8 @@
 }
 
 .main {
+  position: absolute;
+  bottom: 16em;
   background-color: #172339;
   border-radius: 10px;
   padding: 0 1.5em 2em 1.5em;
@@ -127,6 +132,25 @@
   font-size: 1rem;
   letter-spacing: 2.5px;
   margin-top: 0;
+}
+
+.footer {
+  background-color: #F3EDE7;
+  padding-top: 20em;
+  padding-bottom: 3em;
+}
+.footer__logo {
+  margin-bottom: 0;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+.copyright {
+  font-size: 0.9375rem;
+  color: #49566D;
+  margin: 2em 0;
 }
 
 .btn {
@@ -169,4 +193,10 @@
   z-index: 1;
   position: absolute;
   bottom: 0;
+}
+.image--twitter {
+  margin: 0 1.5em;
+}
+.image--icon:hover, .image--icon:focus {
+  opacity: 0.5;
 }

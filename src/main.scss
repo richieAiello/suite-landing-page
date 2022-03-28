@@ -30,6 +30,10 @@ $orange: #FFA84E;
     &--main {
         width: 100%;
     }
+
+    &--footer {
+        width: max-content;
+    }
 }
 
 .flex {
@@ -58,13 +62,8 @@ $orange: #FFA84E;
         align-items: center;
     }
 
-    &--footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
     &--list {
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
 
@@ -168,6 +167,33 @@ $orange: #FFA84E;
 }
 
 // footer
+.footer {
+    background-color: $light-grey;
+    padding-bottom: 3em;
+
+    &__logo {
+        margin-bottom: 0;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    &__item {
+    }
+
+    &__link {
+
+    }
+}
+
+.copyright {
+    font-size: 0.9375rem;
+    color: $dark-grey;
+    margin: 2em 0;
+}
 
 // buttons and links
 .btn {
@@ -218,5 +244,17 @@ $orange: #FFA84E;
         z-index: 1;
         position: absolute;
         bottom: 0;
+    }
+
+    &--twitter {
+        margin: 0 1.5em;
+    }
+
+    &--icon {
+
+        &:hover,                    
+        &:focus {
+            opacity: 0.5;
+        }
     }
 }

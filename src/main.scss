@@ -26,7 +26,7 @@ $orange: #FFA84E;
 
 .container {
     margin-inline: auto;
-    width: 95%;
+    width: min(95%, 1110px);
 
     &--main {
         width: 100%;
@@ -34,6 +34,20 @@ $orange: #FFA84E;
 
     &--footer {
         width: max-content;
+    }
+    
+    @media(min-width: 600px) {
+
+        &--main {
+            width: min(95%, 1110px);
+        }
+
+        &--footer {
+            width: min(95%, 1110px);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+        }
     }
 }
 
@@ -66,6 +80,14 @@ $orange: #FFA84E;
     &--list {
         justify-content: flex-start;
     }
+
+    @media(min-width: 800px) {
+        
+        &--wrapper {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
 }
 
 .bold-text {
@@ -79,11 +101,17 @@ $orange: #FFA84E;
 
 // hero
 .hero {
-    padding-bottom: 25em;
+    padding-bottom: 28ch;
+    transition: all 250ms;
 
+    &__wrapper {
+        position: relative;
+    }
+    
     &__accent {
         width: 16ch;
         margin-left: 15ch;
+        transition: all 250ms;
     }
 
     &__heading {
@@ -92,24 +120,50 @@ $orange: #FFA84E;
         line-height: 2.75rem;  
         color: $dark-blue;
         margin-top: 0;
+        transition: all 250ms;
     }
 
     &__text {
         color: $dark-grey;
+        letter-spacing: 0.09px;
+    }
+
+    @media(min-width: 600px) {
+
+        &__accent {
+            width: 20ch;
+            margin-left: 23ch;
+        }
+
+        &__heading {
+            font-size: 3.5rem;
+            line-height: 4rem;
+            letter-spacing: -0.78px;
+        }
+
+    }
+
+    @media(min-width: 720px) {
+
+        & {
+            padding-bottom: 25ch;
+        }
+        
+    }
+
+    @media(min-width: 861px) {
+        
+        & {
+            padding-bottom: 22ch;
+        }
     }
 }
 
 // stats
 .stats {
-    position: relative;
     padding-top: 5em;
     padding-bottom: 15em;
     text-align: center;
-    z-index: 1;
-
-    &__companies &__heading {
-        margin-top: 0;
-    }
 
     &__heading {
         font-weight: 700;
@@ -126,12 +180,32 @@ $orange: #FFA84E;
         letter-spacing: 2.5px;
         margin-bottom: 0;
     }
+
+    &__companies &__heading {
+        margin-top: 0;
+    }
+
+    @media(min-width: 720px) {
+        & {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-top: 7em;
+        }
+
+        &__languages &__heading,
+        &__leads &__heading {
+            margin-top: 0;
+        }
+    }
 }
 
 // main
 .main {
     position: absolute;
-    bottom: 16em;
+    bottom: 30ch;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
     background-color: $dark-blue;
     border-radius: 10px;
     padding: 0 1.5em 2em 1.5em;
@@ -174,13 +248,21 @@ $orange: #FFA84E;
         letter-spacing: 2.5px;
         margin-top: 0;
     }
+
+    @media(min-width: 600px) {
+
+        & {
+            bottom: 20ch
+        }
+    }
 }
 
 // footer
 .footer {
     background-color: $light-grey;
-    padding-top: 20em;
+    padding-top: 50ch;
     padding-bottom: 3em;
+    transition: all 250ms;
 
     &__logo {
         margin-bottom: 0;
@@ -190,20 +272,22 @@ $orange: #FFA84E;
         list-style: none;
         padding: 0;
         margin-top: 0;
+        justify-self: end;
     }
 
-    &__item {
-    }
+    // &__item {
+    // }
 
-    &__link {
+    // &__link {
 
-    }
+    // }
 }
 
 .copyright {
     font-size: 0.9375rem;
     color: $dark-grey;
     margin: 2em 0;
+    justify-self: center;
 }
 
 // buttons and links
@@ -225,6 +309,13 @@ $orange: #FFA84E;
             background-color: $dark-blue;
             color: $off-white;
         }
+
+        @media(min-width: 600px) {
+
+            & {
+                font-size: 1rem;
+            }
+        }
     }
 
     &--hero {
@@ -244,6 +335,10 @@ $orange: #FFA84E;
 .image {
     max-width: 100%;
 
+    &--hero-portrait {
+        display: none;
+    }
+
     &--jeremy {
         position: absolute;
         z-index: 2;
@@ -255,6 +350,7 @@ $orange: #FFA84E;
         z-index: 1;
         position: absolute;
         bottom: 0;
+        width: 10ch;
     }
 
     &--twitter {
@@ -266,6 +362,21 @@ $orange: #FFA84E;
         &:hover,                    
         &:focus {
             opacity: 0.5;
+        }
+    }
+
+    @media(min-width: 720px) {
+
+        &--hero-landscape {
+            display: none;
+        }
+
+        &--hero-portrait {
+            display: block;
+            height: 482px;
+            position: absolute;
+            z-index: -1;
+            left: 39ch;
         }
     }
 }

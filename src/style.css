@@ -72,6 +72,7 @@
 }
 .hero__text {
   color: #49566D;
+  letter-spacing: 0.09px;
 }
 
 .stats {
@@ -198,6 +199,7 @@
   z-index: 1;
   position: absolute;
   bottom: 0;
+  width: 10ch;
 }
 .image--twitter {
   margin: 0 1.5em;

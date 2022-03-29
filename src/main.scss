@@ -171,7 +171,7 @@ $orange: #FFA84E;
         & {
             display: grid;
             grid-template-columns: 75ch 1fr;
-            padding-bottom: 50ch;
+            padding-bottom: 55ch;
         }
     }
 }
@@ -296,9 +296,9 @@ $orange: #FFA84E;
         }
 
         &__content {
-            min-width: 40%;
+            width: 350px;
             text-align: left;
-            padding: 6em 9em 6em 0;
+            padding: 5.75em 0;
         }
 
         &__accent {
@@ -333,12 +333,12 @@ $orange: #FFA84E;
         justify-self: end;
     }
 
-    // &__item {
-    // }
+    @media(min-width: 960px) {
 
-    // &__link {
-
-    // }
+        & {
+            padding-top: 30ch
+        }
+    }
 }
 
 .copyright {

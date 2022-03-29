@@ -60,10 +60,6 @@ $orange: #FFA84E;
 
     }
 
-    &--hero {
-        flex-direction: column;
-    }
-
     &--wrapper {
         flex-direction: column;
     }
@@ -101,6 +97,8 @@ $orange: #FFA84E;
 
 // hero
 .hero {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 28ch;
     transition: all 250ms;
 
@@ -146,6 +144,7 @@ $orange: #FFA84E;
     @media(min-width: 720px) {
 
         & {
+            padding-top: 8ch;
             padding-bottom: 25ch;
         }
         
@@ -155,6 +154,15 @@ $orange: #FFA84E;
         
         & {
             padding-bottom: 22ch;
+        }
+    }
+
+    @media(min-width: 960px) {
+
+        & {
+            display: grid;
+            grid-template-columns: 75ch 1fr;
+            padding-bottom: 50ch;
         }
     }
 }
@@ -195,6 +203,17 @@ $orange: #FFA84E;
         &__languages &__heading,
         &__leads &__heading {
             margin-top: 0;
+        }
+    }
+
+    @media(min-width: 960px) {
+        & {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: space-between;
+            padding-top: 0;
+            padding-bottom: 0;
         }
     }
 }
@@ -334,6 +353,18 @@ $orange: #FFA84E;
 // images
 .image {
     max-width: 100%;
+    transition: all 500ms;
+
+    &--hero-landscape {
+        max-width: 400px;
+
+        @media(min-width: 420px) {
+            
+            & {
+                align-self: center;
+            }
+        }
+    }
 
     &--hero-portrait {
         display: none;
@@ -376,7 +407,15 @@ $orange: #FFA84E;
             height: 482px;
             position: absolute;
             z-index: -1;
-            left: 39ch;
+            top: -5ch;
+            left: 40ch;
+        }
+    }
+
+    @media(min-width: 960px) {
+        &--hero-portrait {
+            height: 600px;
+            left: 36ch;
         }
     }
 }

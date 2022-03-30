@@ -121,11 +121,6 @@
     padding-top: 8ch;
   }
 }
-@media (min-width: 861px) {
-  .hero {
-    padding-bottom: 22ch;
-  }
-}
 @media (min-width: 960px) {
   .hero {
     display: grid;

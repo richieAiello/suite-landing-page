@@ -20,6 +20,14 @@
 .container--main {
   width: 100%;
 }
+.container--accent {
+  display: flex;
+  width: 100%;
+  padding-top: 2em;
+  position: relative;
+  z-index: 1;
+  background-color: #172339;
+}
 .container--footer {
   width: max-content;
 }
@@ -34,6 +42,13 @@
     align-items: center;
   }
 }
+@media (min-width: 960px) {
+  .container--accent {
+    z-index: 0;
+    width: unset;
+    padding-bottom: 9.5em;
+  }
+}
 
 .flex {
   display: flex;
@@ -41,9 +56,6 @@
 .flex--nav {
   justify-content: space-between;
   align-items: center;
-}
-.flex--hero {
-  flex-direction: column;
 }
 .flex--wrapper {
   flex-direction: column;
@@ -64,6 +76,12 @@
     align-items: center;
   }
 }
+@media (min-width: 960px) {
+  .flex--main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .bold-text {
   font-weight: 700;
@@ -74,7 +92,9 @@
 }
 
 .hero {
-  padding-bottom: 28ch;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 27ch;
   transition: all 250ms;
 }
 .hero__wrapper {
@@ -98,6 +118,9 @@
   letter-spacing: 0.09px;
 }
 @media (min-width: 600px) {
+  .hero {
+    padding-bottom: 20ch;
+  }
   .hero__accent {
     width: 20ch;
     margin-left: 23ch;
@@ -110,12 +133,14 @@
 }
 @media (min-width: 720px) {
   .hero {
-    padding-bottom: 25ch;
+    padding-top: 8ch;
   }
 }
-@media (min-width: 861px) {
+@media (min-width: 960px) {
   .hero {
-    padding-bottom: 22ch;
+    display: grid;
+    grid-template-columns: 75ch 1fr;
+    padding-bottom: 55ch;
   }
 }
 
@@ -126,7 +151,7 @@
 }
 .stats__heading {
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #172339;
   line-height: 3.5rem;
   margin-bottom: 0;
@@ -141,14 +166,25 @@
 .stats__companies .stats__heading {
   margin-top: 0;
 }
-@media (min-width: 720px) {
+@media (min-width: 600px) {
   .stats {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 7em;
+    padding-top: 4em;
   }
   .stats__languages .stats__heading, .stats__leads .stats__heading {
     margin-top: 0;
+  }
+}
+@media (min-width: 960px) {
+  .stats {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -167,8 +203,8 @@
   min-height: 12em;
 }
 .main__accent {
+  margin-inline: auto;
   align-self: center;
-  padding: 2em 0;
 }
 .main__content {
   text-align: center;
@@ -180,6 +216,8 @@
 }
 .main__quote {
   color: #F3EDE7;
+  max-width: 30ch;
+  margin-inline: auto;
 }
 .main__sub-heading {
   text-transform: uppercase;
@@ -195,14 +233,37 @@
   margin-top: 0;
 }
 @media (min-width: 600px) {
+  .main__quote {
+    max-width: 45ch;
+  }
   .main {
     bottom: 20ch;
+  }
+}
+@media (min-width: 960px) {
+  .main {
+    padding: 0 2em;
+  }
+  .main__image-wrapper {
+    min-height: 100%;
+    min-width: 40%;
+  }
+  .main__content {
+    max-width: 350px;
+    text-align: left;
+    padding: 5.75em 0;
+  }
+  .main__heading {
+    margin-top: 0;
+  }
+  .main__sub-text {
+    margin-bottom: 0;
   }
 }
 
 .footer {
   background-color: #F3EDE7;
-  padding-top: 50ch;
+  padding-top: 55ch;
   padding-bottom: 3em;
   transition: all 250ms;
 }
@@ -214,6 +275,11 @@
   padding: 0;
   margin-top: 0;
   justify-self: end;
+}
+@media (min-width: 960px) {
+  .footer {
+    padding-top: 30ch;
+  }
 }
 
 .copyright {
@@ -256,22 +322,32 @@
 }
 
 .image {
-  max-width: 100%;
+  transition: all 500ms;
+}
+.image--hero-landscape {
+  max-width: 400px;
+}
+@media (min-width: 420px) {
+  .image--hero-landscape {
+    align-self: center;
+  }
 }
 .image--hero-portrait {
   display: none;
 }
-.image--jeremy {
+.image--jeremy-small {
   position: absolute;
   z-index: 2;
   bottom: 0;
 }
+.image--jeremy-large {
+  display: none;
+}
 .image--blur {
-  opacity: 0.5;
   z-index: 1;
   position: absolute;
-  bottom: 0;
-  width: 10ch;
+  bottom: -5ch;
+  max-width: 32ch;
 }
 .image--twitter {
   margin: 0 1.5em;
@@ -288,6 +364,27 @@
     height: 482px;
     position: absolute;
     z-index: -1;
-    left: 39ch;
+    top: -5ch;
+    left: 40ch;
+  }
+}
+@media (min-width: 960px) {
+  .image--hero-portrait {
+    height: 600px;
+    left: 36ch;
+  }
+  .image--jeremy-small {
+    display: none;
+  }
+  .image--jeremy-large {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    max-width: 360px;
+  }
+  .image--blur {
+    max-width: 55ch;
+    bottom: -10ch;
   }
 }

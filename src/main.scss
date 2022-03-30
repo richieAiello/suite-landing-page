@@ -108,7 +108,7 @@ $orange: #FFA84E;
 .hero {
     display: flex;
     flex-direction: column;
-    padding-bottom: 28ch;
+    padding-bottom: 27ch;
     transition: all 250ms;
 
     &__wrapper {
@@ -137,6 +137,10 @@ $orange: #FFA84E;
 
     @media(min-width: 600px) {
 
+        & {
+            padding-bottom: 20ch;
+        }
+
         &__accent {
             width: 20ch;
             margin-left: 23ch;
@@ -154,7 +158,7 @@ $orange: #FFA84E;
 
         & {
             padding-top: 8ch;
-            padding-bottom: 25ch;
+            // padding-bottom: 25ch;
         }
         
     }
@@ -183,7 +187,7 @@ $orange: #FFA84E;
 
     &__heading {
         font-weight: 700;
-        font-size: 4rem;
+        font-size: 3rem;
         color: $dark-blue;
         line-height: 3.5rem;
         margin-bottom: 0;
@@ -201,11 +205,11 @@ $orange: #FFA84E;
         margin-top: 0;
     }
 
-    @media(min-width: 720px) {
+    @media(min-width: 600px) {
         & {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            padding-top: 7em;
+            padding-top: 4em;
         }
 
         &__languages &__heading,
@@ -260,6 +264,8 @@ $orange: #FFA84E;
 
     &__quote {
         color: $light-grey;
+        max-width: 30ch;
+        margin-inline: auto;
     }
 
     &__sub-heading {
@@ -279,6 +285,11 @@ $orange: #FFA84E;
 
     @media(min-width: 600px) {
 
+        &__quote {
+            
+            max-width: 45ch;
+        }
+
         & {
             bottom: 20ch
         }
@@ -296,7 +307,7 @@ $orange: #FFA84E;
         }
 
         &__content {
-            width: 350px;
+            max-width: 350px;
             text-align: left;
             padding: 5.75em 0;
         }
@@ -318,7 +329,7 @@ $orange: #FFA84E;
 // footer
 .footer {
     background-color: $light-grey;
-    padding-top: 50ch;
+    padding-top: 55ch;
     padding-bottom: 3em;
     transition: all 250ms;
 

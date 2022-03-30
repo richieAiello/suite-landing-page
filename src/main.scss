@@ -439,8 +439,8 @@ $orange: #FFA84E;
     &--blur  {
         z-index: 1;
         position: absolute;
-        bottom: -8ch;
-        width: 38ch;
+        bottom: -5ch;
+        max-width: 32ch;
     }
 
     &--twitter {
@@ -490,7 +490,7 @@ $orange: #FFA84E;
         }
 
         &--blur  {
-            width: 55ch;
+            max-width: 55ch;
             bottom: -10ch;
         }
     }

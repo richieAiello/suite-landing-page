@@ -346,8 +346,8 @@
 .image--blur {
   z-index: 1;
   position: absolute;
-  bottom: -8ch;
-  width: 38ch;
+  bottom: -5ch;
+  max-width: 32ch;
 }
 .image--twitter {
   margin: 0 1.5em;
@@ -384,7 +384,7 @@
     max-width: 360px;
   }
   .image--blur {
-    width: 55ch;
+    max-width: 55ch;
     bottom: -10ch;
   }
 }

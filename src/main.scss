@@ -12,6 +12,9 @@ $orange: #FFA84E;
 *::before,
 *::after {
     box-sizing: border-box;
+    // scrollbar firefox support
+    scrollbar-color: $dark-blue $light-grey;
+    scrollbar-width: thin;
 }
 
 // base styles

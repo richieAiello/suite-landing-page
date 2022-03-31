@@ -1,3 +1,9 @@
+/**********************************
+    colors
+**********************************/
+/**********************************
+    reset and scrollbar support
+**********************************/
 *,
 *::before,
 *::after {
@@ -6,6 +12,9 @@
   scrollbar-width: thin;
 }
 
+/**********************************
+    base styles
+**********************************/
 .body {
   margin: 0;
   background-color: #FAF8F6;
@@ -67,33 +76,13 @@
   }
 }
 
-.flex {
-  display: flex;
-}
-.flex--main {
-  flex-direction: column;
-}
-.flex--main-wrapper {
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 720px) {
-  .flex--wrapper {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-@media (min-width: 960px) {
-  .flex--main {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
 .bold-text {
   font-weight: 700;
 }
 
+/**********************************
+    nav
+**********************************/
 .nav {
   display: flex;
   justify-content: space-between;
@@ -101,6 +90,9 @@
   padding: 1em 0 3em 0;
 }
 
+/**********************************
+    hero
+**********************************/
 .hero {
   display: flex;
   flex-direction: column;
@@ -200,7 +192,12 @@
   }
 }
 
+/**********************************
+    main
+**********************************/
 .main {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   bottom: 30ch;
   left: 0;
@@ -211,6 +208,9 @@
   padding: 0 1.5em 2em 1.5em;
 }
 .main__image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   min-height: 12em;
 }
@@ -254,6 +254,8 @@
 }
 @media (min-width: 960px) {
   .main {
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0 2em;
   }
   .main__image-wrapper {
@@ -273,6 +275,9 @@
   }
 }
 
+/**********************************
+    footer
+**********************************/
 .footer {
   background-color: #F3EDE7;
   padding-top: 55ch;
@@ -303,6 +308,9 @@
   justify-self: center;
 }
 
+/**********************************
+    buttons and links
+**********************************/
 .btn {
   text-decoration: none;
   display: inline-block;
@@ -335,6 +343,9 @@
   background-image: linear-gradient(to bottom right, #A060FF, #CB30E3, #FFA84E);
 }
 
+/**********************************
+    images
+**********************************/
 .image {
   transition: all 500ms;
 }

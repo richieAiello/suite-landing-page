@@ -91,12 +91,6 @@ $orange: #FFA84E;
 .flex {
     display: flex;
 
-    &--nav {
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
     &--wrapper {
         flex-direction: column;
     }
@@ -110,7 +104,7 @@ $orange: #FFA84E;
         align-items: center;
         
     }
-    
+
     @media(min-width: 720px) {
         
         &--wrapper {
@@ -134,6 +128,9 @@ $orange: #FFA84E;
 
 // nav
 .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1em 0 3em 0;
 }
 

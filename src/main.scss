@@ -17,11 +17,26 @@ $orange: #FFA84E;
 // base styles
 .body {
     margin: 0;
+    background-color: $off-white;
     font-family: 'Epilogue', sans-serif;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 2rem;
     position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $light-grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $dark-blue;
+    border-radius: 100vw;
+    border: 0.25em solid $light-grey;
 }
 
 .container {
@@ -68,6 +83,7 @@ $orange: #FFA84E;
         }
     }
 }
+
 
 .flex {
     display: flex;

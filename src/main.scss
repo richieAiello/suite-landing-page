@@ -91,10 +91,6 @@ $orange: #FFA84E;
 .flex {
     display: flex;
 
-    &--wrapper {
-        flex-direction: column;
-    }
-
     &--main {
         flex-direction: column;
     }
@@ -142,6 +138,8 @@ $orange: #FFA84E;
     transition: all 250ms;
 
     &__wrapper {
+        display: flex;
+        flex-direction: column;
         position: relative;
     }
     

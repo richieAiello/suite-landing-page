@@ -70,9 +70,6 @@
 .flex {
   display: flex;
 }
-.flex--wrapper {
-  flex-direction: column;
-}
 .flex--main {
   flex-direction: column;
 }
@@ -111,6 +108,8 @@
   transition: all 250ms;
 }
 .hero__wrapper {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 .hero__accent {

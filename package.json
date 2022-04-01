@@ -2,9 +2,9 @@
   "name": "suite-landing-page",
   "version": "1.0.0",
   "description": "Frontend Mentor junior level challenge. HTML CSS Sass",
-  "main": "src/index.html",
+  "main": "index.html",
   "scripts": {
-    "compile": "sass --watch --no-source-map src/main.scss src/style.css"
+    "compile": "sass --watch --no-source-map main.scss style.css"
   },
   "repository": {
     "type": "git",

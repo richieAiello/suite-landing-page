@@ -1,8 +1,8 @@
 {
   "name": "suite-landing-page",
   "version": "1.0.0",
-  "description": "frontendmentor.io junior level challenge. HTML CSS SassyCSS",
-  "main": "index.js",
+  "description": "Frontend Mentor junior level challenge. HTML CSS Sass",
+  "main": "src/index.html",
   "scripts": {
     "compile": "sass --watch --no-source-map src/main.scss src/style.css"
   },

@@ -135,7 +135,7 @@
     letter-spacing: -0.78px;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 740px) {
   .hero {
     padding-top: 8ch;
   }
@@ -380,7 +380,7 @@
 .image--icon:hover, .image--icon:focus {
   opacity: 0.5;
 }
-@media (min-width: 720px) {
+@media (min-width: 740px) {
   .image--hero-landscape {
     display: none;
   }

@@ -38,6 +38,9 @@
   border-radius: 100vw;
   border: 0.25em solid #F3EDE7;
 }
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(23, 35, 57, 0.85);
+}
 
 .container {
   margin-inline: auto;
@@ -105,21 +108,34 @@
   position: relative;
 }
 .hero__accent {
-  width: 16ch;
-  margin-left: 15ch;
+  width: 12ch;
+  margin-left: 13.25ch;
   transition: all 250ms;
 }
 .hero__heading {
   font-weight: 400;
-  font-size: 2.375rem;
+  font-size: 2rem;
   line-height: 2.75rem;
   color: #172339;
   margin-top: 0;
   transition: all 250ms;
 }
 .hero__text {
+  font-size: 1rem;
   color: #49566D;
   letter-spacing: 0.09px;
+}
+@media (min-width: 358px) {
+  .hero__accent {
+    width: 15ch;
+    margin-left: 15.5ch;
+  }
+  .hero__heading {
+    font-size: 2.375rem;
+  }
+  .hero__text {
+    font-size: inherit;
+  }
 }
 @media (min-width: 600px) {
   .hero {
@@ -227,6 +243,7 @@
   color: #FAF8F6;
 }
 .main__quote {
+  font-size: 1rem;
   color: #F3EDE7;
   max-width: 30ch;
   margin-inline: auto;
@@ -243,6 +260,11 @@
   font-size: 1rem;
   letter-spacing: 2.5px;
   margin-top: 0;
+}
+@media (min-width: 358px) {
+  .main__quote {
+    font-size: inherit;
+  }
 }
 @media (min-width: 600px) {
   .main__quote {
@@ -263,7 +285,7 @@
     min-width: 40%;
   }
   .main__content {
-    max-width: 350px;
+    max-width: 340px;
     text-align: left;
     padding: 5.75em 0;
   }
@@ -323,10 +345,16 @@
   font-size: 0.875rem;
   color: #172339;
   border: 1px solid #172339;
+  padding: 0.5em 1em;
 }
 .btn--nav:hover, .btn--nav:focus {
   background-color: #172339;
   color: #FAF8F6;
+}
+@media (min-width: 358px) {
+  .btn--nav {
+    padding: 0.8em 1.5em;
+  }
 }
 @media (min-width: 600px) {
   .btn--nav {
@@ -372,7 +400,12 @@
   z-index: 1;
   position: absolute;
   bottom: -5ch;
-  max-width: 32ch;
+  max-width: 28ch;
+}
+@media (min-width: 358px) {
+  .image--blur {
+    max-width: 32ch;
+  }
 }
 .image--twitter {
   margin: 0 1.5em;

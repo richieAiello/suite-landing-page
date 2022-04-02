@@ -46,6 +46,11 @@ $orange: #FFA84E;
     background-color: $dark-blue;
     border-radius: 100vw;
     border: 0.25em solid $light-grey;
+
+    &:hover {
+        
+        background-color: rgba($dark-blue, 0.85);
+    }
 }
 
 .container {
@@ -69,7 +74,7 @@ $orange: #FFA84E;
         width: max-content;
     }
     
-    @media(min-width: 600px) {
+    @media(min-width: 600px) { 
 
         &--main {
             width: min(95%, 1110px);
@@ -123,14 +128,14 @@ $orange: #FFA84E;
     }
     
     &__accent {
-        width: 16ch;
-        margin-left: 15ch;
+        width: 12ch;
+        margin-left: 13.25ch;
         transition: all 250ms;
     }
 
     &__heading {
         font-weight: 400;
-        font-size: 2.375rem;
+        font-size: 2rem;
         line-height: 2.75rem;  
         color: $dark-blue;
         margin-top: 0;
@@ -138,8 +143,25 @@ $orange: #FFA84E;
     }
 
     &__text {
+        font-size: 1rem;
         color: $dark-grey;
         letter-spacing: 0.09px;
+    }
+
+    @media(min-width: 358px) {
+
+        &__accent {
+            width: 15ch;
+            margin-left: 15.5ch;
+        }
+
+        &__heading {
+            font-size: 2.375rem;
+        }
+
+        &__text {
+            font-size: inherit;
+        }
     }
 
     @media(min-width: 600px) {
@@ -270,6 +292,7 @@ $orange: #FFA84E;
     }
 
     &__quote {
+        font-size: 1rem;
         color: $light-grey;
         max-width: 30ch;
         margin-inline: auto;
@@ -288,6 +311,13 @@ $orange: #FFA84E;
         font-size: 1rem;
         letter-spacing: 2.5px;
         margin-top: 0;
+    }
+
+    @media(min-width: 358px) {
+
+        &__quote {
+            font-size: inherit;
+        }
     }
 
     @media(min-width: 600px) {
@@ -316,7 +346,7 @@ $orange: #FFA84E;
         }
 
         &__content {
-            max-width: 350px;
+            max-width: 340px;
             text-align: left;
             padding: 5.75em 0;
         }
@@ -383,11 +413,19 @@ $orange: #FFA84E;
         font-size: 0.875rem;
         color: $dark-blue;
         border: 1px solid $dark-blue;
+        padding: 0.5em 1em;
 
         &:hover,
         &:focus  {
             background-color: $dark-blue;
             color: $off-white;
+        }
+
+        @media(min-width: 358px) {
+
+            & {
+                padding: 0.8em 1.5em;
+            }
         }
 
         @media(min-width: 600px) {
@@ -446,7 +484,14 @@ $orange: #FFA84E;
         z-index: 1;
         position: absolute;
         bottom: -5ch;
-        max-width: 32ch;
+        max-width: 28ch;
+
+        @media(min-width: 358px) {
+
+            & {
+                max-width: 32ch;
+            }
+        }
     }
 
     &--twitter {
@@ -478,6 +523,7 @@ $orange: #FFA84E;
     }
 
     @media(min-width: 960px) {
+
         &--hero-portrait {
             height: 600px;
             left: 36ch;

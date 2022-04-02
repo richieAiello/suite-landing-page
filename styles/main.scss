@@ -109,7 +109,7 @@ $orange: #FFA84E;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3em 0;
+    padding: 2.25em 0 3em 0;
 }
 
 /**********************************
@@ -444,7 +444,7 @@ $orange: #FFA84E;
         @media(min-width: 358px) {
 
             & {
-                padding: 0.8em 1.5em;
+                padding: 0.8em 1.25em;
             }
         }
 

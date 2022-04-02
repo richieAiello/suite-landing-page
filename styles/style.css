@@ -90,7 +90,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3em 0;
+  padding: 2.25em 0 3em 0;
 }
 
 /**********************************
@@ -368,7 +368,7 @@
 }
 @media (min-width: 358px) {
   .btn--nav {
-    padding: 0.8em 1.5em;
+    padding: 0.8em 1.25em;
   }
 }
 @media (min-width: 600px) {

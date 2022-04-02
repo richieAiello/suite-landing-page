@@ -16,8 +16,8 @@ This is a solution to the [Suite landing page challenge on Frontend Mentor](http
 
 ### Links
 
-- Live Site URL: [Suite Landing Live](https://richieaiello.github.io/suite-landing-page/)
-- Solution URL: [Solution](https://your-solution-url.com)
+- [Suite Landing Page Live URL](https://richieaiello.github.io/suite-landing-page/)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-landing-page-using-scss-bem-css-grid-and-flexbox-B1WOQ7Im5)
 
 ## My process
 

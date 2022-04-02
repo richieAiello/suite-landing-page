@@ -109,7 +109,7 @@ $orange: #FFA84E;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 0 3em 0;
+    padding: 3em 0;
 }
 
 /**********************************
@@ -209,7 +209,7 @@ $orange: #FFA84E;
         & {
             display: grid;
             grid-template-columns: 80ch 1fr;
-            padding-bottom: 55ch;
+            padding-bottom: 58ch;
         }
     }
 }

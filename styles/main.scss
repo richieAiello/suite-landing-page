@@ -193,9 +193,22 @@ $orange: #FFA84E;
 
     @media(min-width: 960px) {
 
+        &__accent {
+            width: 25ch;
+            margin-left: 30ch;
+        }
+
+        &__heading {
+            font-size: 4.5rem;
+            line-height: 4.875rem;
+        }
+    }
+
+    @media(min-width: 1120px) {
+
         & {
             display: grid;
-            grid-template-columns: 75ch 1fr;
+            grid-template-columns: 80ch 1fr;
             padding-bottom: 55ch;
         }
     }
@@ -240,6 +253,13 @@ $orange: #FFA84E;
     }
 
     @media(min-width: 960px) {
+
+        & {
+            padding-top: 7.5em;
+        }
+    }
+
+    @media(min-width: 1120px) {
         & {
             display: flex;
             flex-direction: column;
@@ -526,7 +546,7 @@ $orange: #FFA84E;
 
         &--hero-portrait {
             height: 600px;
-            left: 36ch;
+            left: 46.5ch;
         }
 
         &--jeremy-small {

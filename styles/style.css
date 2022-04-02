@@ -157,9 +157,19 @@
   }
 }
 @media (min-width: 960px) {
+  .hero__accent {
+    width: 25ch;
+    margin-left: 30ch;
+  }
+  .hero__heading {
+    font-size: 4.5rem;
+    line-height: 4.875rem;
+  }
+}
+@media (min-width: 1120px) {
   .hero {
     display: grid;
-    grid-template-columns: 75ch 1fr;
+    grid-template-columns: 80ch 1fr;
     padding-bottom: 55ch;
   }
 }
@@ -197,6 +207,11 @@
   }
 }
 @media (min-width: 960px) {
+  .stats {
+    padding-top: 7.5em;
+  }
+}
+@media (min-width: 1120px) {
   .stats {
     display: flex;
     flex-direction: column;
@@ -429,7 +444,7 @@
 @media (min-width: 960px) {
   .image--hero-portrait {
     height: 600px;
-    left: 36ch;
+    left: 46.5ch;
   }
   .image--jeremy-small {
     display: none;

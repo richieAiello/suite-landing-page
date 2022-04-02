@@ -186,7 +186,7 @@ $orange: #FFA84E;
     @media(min-width: 740px) {
 
         & {
-            padding-top: 8ch;
+            padding-top: 3em;
         }
         
     }
@@ -209,7 +209,7 @@ $orange: #FFA84E;
         & {
             display: grid;
             grid-template-columns: 80ch 1fr;
-            padding-bottom: 58ch;
+            padding-bottom: 55ch;
         }
     }
 }
@@ -266,8 +266,8 @@ $orange: #FFA84E;
             text-align: left;
             justify-content: space-between;
             align-items: center;
-            padding-top: 0;
-            padding-bottom: 0;
+            padding-top: 2em;
+            padding-bottom: 2em;
         }
     }
 }

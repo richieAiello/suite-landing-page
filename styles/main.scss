@@ -140,7 +140,6 @@ $orange: #FFA84E;
         display: flex;
         flex-direction: column;
         position: relative;
-        z-index: -5;
     }
     
     &__accent {
@@ -503,7 +502,7 @@ $orange: #FFA84E;
         line-height: 2rem;
 
         &:hover,
-        &:focus  {
+        &:focus {
             background-image: linear-gradient(to bottom right, $light-purple, $pink, $orange);
         }
 

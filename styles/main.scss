@@ -110,6 +110,13 @@ $orange: #FFA84E;
     align-items: center;
     margin-top: 1.5rem;
     margin-bottom: 3.5rem; 
+
+    @media(min-width: 740px) {
+        & {
+            margin-top: 2.5rem;
+            margin-bottom: 5rem;
+        }
+    }
 }
 
 /**********************************
@@ -118,13 +125,14 @@ $orange: #FFA84E;
 .hero {
     display: flex;
     flex-direction: column;
-    padding-bottom: 62ch;
+    padding-bottom: 55ch;
     transition: all 250ms;
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         position: relative;
+        z-index: -5;
     }
     
     &__accent {
@@ -167,10 +175,6 @@ $orange: #FFA84E;
     }
 
     @media(min-width: 525px) {
-
-        & {
-            padding-bottom: 65ch;
-        }
 
         &__accent {
             width: 24ch;
@@ -246,7 +250,7 @@ $orange: #FFA84E;
         margin: 2rem 0;
     }
 
-    @media(min-width: 525px) {
+    @media(min-width: 600px) {
         & {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -286,7 +290,7 @@ $orange: #FFA84E;
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 35ch;
+    bottom: 286px;
     left: 0;
     right: 0;
     margin-inline: auto;
@@ -361,7 +365,7 @@ $orange: #FFA84E;
         }
 
         & {
-            // bottom: 20ch
+            bottom: 176px;
         }
     }
 
@@ -395,11 +399,9 @@ $orange: #FFA84E;
 **********************************/
 .footer {
     background-color: $light-grey;
-    padding-top: 57ch;
+    padding-top: 63.5ch;
     padding-bottom: 5rem;
     transition: all 250ms;
-    // background-color: #49566D;
-
 
     &__logo {
         margin-bottom: 0;
@@ -407,11 +409,17 @@ $orange: #FFA84E;
 
     &__list {
         display: flex;
-        justify-content: flex-start;
+        align-items: center;
         list-style: none;
+        margin: 0;
         padding: 0;
-        margin-top: 0;
         justify-self: end;
+    }
+
+    @media(min-width:600px) {
+        & {
+            padding-bottom: 4.5rem;
+        }
     }
 
     @media(min-width: 960px) {
@@ -427,6 +435,10 @@ $orange: #FFA84E;
     color: $dark-grey;
     margin: 2rem 0;
     justify-self: center;
+
+    @media(min-width: 600px) {
+        margin: 0;
+    }
 }
 
 /**********************************
@@ -472,6 +484,12 @@ $orange: #FFA84E;
         &:hover,
         &:focus  {
             background-image: linear-gradient(to bottom right, $light-purple, $pink, $orange);
+        }
+
+        @media(min-width: 740px) {
+            & {
+                margin-bottom: 0;
+            }
         }
     }
 }

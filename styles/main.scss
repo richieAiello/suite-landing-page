@@ -92,7 +92,7 @@ $orange: #FFA84E;
         &--accent {
             z-index: 0;
             width: unset;
-            padding-bottom: 9.5em;
+            bottom: 10ch;
         }
     }
 }
@@ -112,9 +112,18 @@ $orange: #FFA84E;
     margin-bottom: 3.5rem; 
 
     @media(min-width: 740px) {
+        
         & {
             margin-top: 2.5rem;
             margin-bottom: 5rem;
+        }
+    }
+
+    @media(min-width: 960px) {
+
+        & {
+            margin-top: 3.125rem;
+            margin-bottom: 4.1875rem;
         }
     }
 }
@@ -127,6 +136,7 @@ $orange: #FFA84E;
     flex-direction: column;
     padding-bottom: 55ch;
     transition: all 250ms;
+    background-color: rgba($dark-blue, 0.1);
 
     &__wrapper {
         display: flex;
@@ -251,6 +261,7 @@ $orange: #FFA84E;
     }
 
     @media(min-width: 600px) {
+
         & {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -263,10 +274,17 @@ $orange: #FFA84E;
 
     }
 
+    @media(min-width: 740px) {
+
+        & {
+            margin-top: 8.5rem;
+        }
+    }
+
     @media(min-width: 960px) {
 
         & {
-            padding-top: 7.5em;
+            margin-top: 12rem;
         }
     }
 
@@ -288,6 +306,7 @@ $orange: #FFA84E;
 **********************************/
 .main {
     display: flex;
+    align-items: center;
     flex-direction: column;
     position: absolute;
     bottom: 286px;
@@ -373,23 +392,28 @@ $orange: #FFA84E;
 
         & {
             flex-direction: row;
-            justify-content: space-between;
-            padding: 0 2em;
+            justify-content: space-around;
+            padding: 0 4rem;
         }
 
         &__image-wrapper {
-            min-height: 100%;
             min-width: 40%;
+            align-self: flex-end;
         }
 
         &__content {
-            max-width: 340px;
+            max-width: 350px;
             text-align: left;
             padding: 5.75em 0;
         }
 
         &__heading {
+            font-size: 3rem;
             margin-top: 0;
+        }
+
+        &__quote {
+            font-size: 1.25rem;
         }
     }
 }
@@ -465,7 +489,7 @@ $orange: #FFA84E;
             color: $off-white;
         }
 
-        @media(min-width: 600px) {
+        @media(min-width: 740px) {
 
             & {
                 font-size: 1rem;
@@ -583,7 +607,7 @@ $orange: #FFA84E;
             position: absolute;
             z-index: 2;
             bottom: 0;
-            max-width: 360px;
+            width: 360px;
         }
 
         &--blur  {

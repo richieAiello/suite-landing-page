@@ -115,7 +115,7 @@ $orange: #FFA84E;
         
         & {
             margin-top: 2.5rem;
-            margin-bottom: 5rem;
+            margin-bottom: 7.625rem;
         }
     }
 
@@ -123,7 +123,6 @@ $orange: #FFA84E;
 
         & {
             margin-top: 3.125rem;
-            margin-bottom: 4.1875rem;
         }
     }
 }
@@ -136,7 +135,6 @@ $orange: #FFA84E;
     flex-direction: column;
     padding-bottom: 55ch;
     transition: all 250ms;
-    background-color: rgba($dark-blue, 0.1);
 
     &__wrapper {
         display: flex;
@@ -199,14 +197,6 @@ $orange: #FFA84E;
 
     }
 
-    @media(min-width: 740px) {
-
-        & {
-            padding-top: 3em;
-        }
-        
-    }
-
     @media(min-width: 960px) {
 
         &__accent {
@@ -225,12 +215,12 @@ $orange: #FFA84E;
         }
     }
 
-    @media(min-width: 1120px) {
+    @media(min-width: 1050px) {
 
         & {
             display: grid;
-            grid-template-columns: 80ch 1fr;
-            padding-bottom: 55ch;
+            grid-template-columns: 92.5ch 1fr;
+            padding-bottom: 571px;
         }
     }
 }
@@ -288,15 +278,14 @@ $orange: #FFA84E;
         }
     }
 
-    @media(min-width: 1120px) {
+    @media(min-width: 1050px) {
         & {
             display: flex;
             flex-direction: column;
-            text-align: left;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            padding-top: 2em;
-            padding-bottom: 2em;
+            text-align: left;
+            margin-top: 0;
         }
     }
 }
@@ -393,7 +382,8 @@ $orange: #FFA84E;
         & {
             flex-direction: row;
             justify-content: space-around;
-            padding: 0 4rem;
+            padding: 0 3rem;
+            bottom: 199px;
         }
 
         &__image-wrapper {
@@ -414,6 +404,13 @@ $orange: #FFA84E;
 
         &__quote {
             font-size: 1.25rem;
+        }
+    }
+
+    @media(min-width: 1150px) {
+
+        & {
+            padding: 0 7.8125rem;
         }
     }
 }
@@ -449,7 +446,7 @@ $orange: #FFA84E;
     @media(min-width: 960px) {
 
         & {
-            padding-top: 30ch
+            padding-top: 22.5rem;
         }
     }
 }
@@ -611,8 +608,16 @@ $orange: #FFA84E;
         }
 
         &--blur  {
-            max-width: 55ch;
-            bottom: -10ch;
+            max-width: max-content;
+            bottom: -9ch;
+        }
+    }
+
+    @media(min-width: 1150px) {
+
+        &--blur {
+            bottom: -9ch;
+            right: -8.75ch;
         }
     }
 }
